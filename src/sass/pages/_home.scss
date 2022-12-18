@@ -50,9 +50,9 @@
         padding: 3rem;
 
         &-img {
-            width: 40rem;
+            min-width: 35rem;
             height: 30rem;
-            background-color: aqua;            
+            background-color: $color-primary;            
         }
 
         &-text {
