@@ -8,7 +8,7 @@
     font-size: 5rem;
     font-weight: 900;
     margin-top: 1rem;
-    -webkit-text-stroke: 0.1px $color-white;
+    -webkit-text-stroke: 1px $color-white;
     -webkit-text-fill-color: $color-primary-dark;
     
     span {
@@ -19,7 +19,7 @@
         background-size: 150%;        
         color: transparent;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0.1px $color-primary-dark;
+        -webkit-text-stroke: 1px $color-primary-dark;
     }
 }
 
