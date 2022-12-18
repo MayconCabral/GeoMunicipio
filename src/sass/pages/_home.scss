@@ -2,12 +2,33 @@
     text-align: center;
 }
 
+.title {
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    -webkit-text-stroke: 0.1px $color-white;
+    -webkit-text-fill-color: $color-primary-dark;
+    
+    span {
+        font-size: 8rem;
+        font-weight: 900;
+        background-clip: text;
+        background-image: url('../../img/map.png');
+        background-size: 150%;        
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0.1px $color-primary-dark;
+    }
+}
+
 .infoBoard {
     width: 70%;
     height: 70%;    
     border-radius: 3px; 
     background-color: $color-white;
-    margin: 5rem auto;
+    margin: auto;
     padding: 3rem;
     box-shadow:
     12.4px 12.1px 10px rgba(0, 0, 0, 0.03),
@@ -29,7 +50,7 @@
         padding: 3rem;
 
         &-img {
-            width: 30rem;
+            width: 40rem;
             height: 30rem;
             background-color: aqua;            
         }
@@ -42,6 +63,19 @@
                 text-align: justify;
             }
         }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+        padding: 1rem;
     }
 }
 
