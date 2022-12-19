@@ -54,7 +54,7 @@ function Home(props) {
               county && (
               <>
                 <h3>{ county.municipio.nome }</h3>
-                <p><strong>Microregião: </strong>{ county.municipio.microrregiao.nome }</p>
+                <p><strong>Microrregião: </strong>{ county.municipio.microrregiao.nome }</p>
                 <p><strong>Mesorregião: </strong>{ county.municipio.microrregiao.mesorregiao.nome}</p>
                 <p><strong>UF: </strong>{ county.municipio.microrregiao.mesorregiao.UF.nome}</p>           
               </>

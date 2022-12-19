@@ -9,7 +9,7 @@ function App() {
     <>
       <Suspense fallback={ <LoadingHome />}>
         <Home />
-      </Suspense>
+      </Suspense>    
     </>
   );
 }
