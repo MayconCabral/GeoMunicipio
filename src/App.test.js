@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('Testa o loading da página', () => {
+  const {container} = render(<App />);
+  const loading = container.getElementsByClassName('loading__home');
+
+  expect(loading.length).toBe(1)
 });
