@@ -55,8 +55,8 @@
 // MOBILE
 @media screen and (max-width: $breakpoint-mobile-w) {
     .title {
-        font-size: 3rem;
-        margin-top: 0;
+        line-height: 5rem;
+        font-size: 3rem;        
         span {
             font-size: 5rem;
         }

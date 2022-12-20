@@ -2,13 +2,14 @@
     text-align: center;
 }
 
-.title {    
+.title {  
+    line-height: 8rem;  
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 2px;
     font-size: 5rem;
     font-weight: 900;
-    margin-top: 1rem;
-    -webkit-text-stroke: 1px $color-white;
+    margin-top: 2rem;
+    -webkit-text-stroke: 0.1rem $color-white;
     -webkit-text-fill-color: $color-primary-dark;
     
     span {
@@ -19,7 +20,7 @@
         background-size: 150%;        
         color: transparent;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px $color-primary-dark;
+        -webkit-text-stroke: 0.3rem $color-primary-dark;
     }
 }
 
@@ -28,7 +29,7 @@
     height: 70%;    
     border-radius: 3px; 
     background-color: $color-white;
-    margin: auto;
+    margin: 0 auto;
     padding: 3rem;
     box-shadow:
     12.4px 12.1px 10px rgba(0, 0, 0, 0.03),
