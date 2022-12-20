@@ -34,6 +34,12 @@
                 width: 95%;
                 height: 20rem;
             }
+            &-text {
+                &-space {
+                    display: block;
+                    min-height: 11rem;
+                }
+            }
         }
     }
 }
@@ -48,6 +54,12 @@
                 min-width: 45rem;
                 height: 22rem;
             }
+            &-text {
+                &-space {
+                    display: block;
+                    min-height: 11rem;
+                }
+            }
         }
     }
 }
@@ -55,9 +67,11 @@
 // MOBILE
 @media screen and (max-width: $breakpoint-mobile-w) {
     .title {
+        letter-spacing: 0;       
         line-height: 5rem;
         font-size: 3rem;        
         span {
+            margin-right: .2rem;
             font-size: 5rem;
         }
     }
@@ -101,6 +115,11 @@
             }
             &-text {
                 font-size: 1.4rem;
+
+                &-space {
+                    display: block;
+                    min-height: 10rem;
+                }
             }
         }
     }

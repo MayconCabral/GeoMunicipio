@@ -1,4 +1,5 @@
 import React, { useEffect, Suspense } from 'react';
+import { motion } from 'framer-motion';
 import { connect } from 'react-redux';
 import { fetchStates } from '../redux/actions/state';
 import Loading from '../components/Loading';
@@ -51,14 +52,18 @@ function Home(props) {
             </div>
             <div className='infoBoard__map-text'>
               { 
-              county && (
-              <>
-                <h3>{ county.municipio.nome }</h3>
-                <p><strong>Microrregião: </strong>{ county.municipio.microrregiao.nome }</p>
-                <p><strong>Mesorregião: </strong>{ county.municipio.microrregiao.mesorregiao.nome}</p>
-                <p><strong>UF: </strong>{ county.municipio.microrregiao.mesorregiao.UF.nome}</p>           
-              </>
-              )
+                county ? 
+                <>
+                <motion.div 
+                  animate={{y: [-8, 0], opacity:[0, 1]}}
+                  transition={{duration: 1}}
+                >
+                  <h3>{ county.municipio.nome }</h3>
+                  <p><strong>Microrregião: </strong>{ county.municipio.microrregiao.nome }</p>
+                  <p><strong>Mesorregião: </strong>{ county.municipio.microrregiao.mesorregiao.nome}</p>
+                  <p><strong>UF: </strong>{ county.municipio.microrregiao.mesorregiao.UF.nome}</p>
+                </motion.div>
+                </> : <div className='infoBoard__map-text-space'></div>              
               }
             </div>
           </div>          

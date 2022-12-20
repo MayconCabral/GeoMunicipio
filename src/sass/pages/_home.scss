@@ -5,7 +5,7 @@
 .title {  
     line-height: 8rem;  
     font-family: 'Alfa Slab One', cursive;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     font-size: 5rem;
     font-weight: 900;
     margin-top: 2rem;
@@ -13,6 +13,7 @@
     -webkit-text-fill-color: $color-primary-dark;
     
     span {
+        margin-right: .5rem;
         font-size: 8rem;
         font-weight: 900;
         background-clip: text;
@@ -58,12 +59,17 @@
 
         &-text {
             font-size: $default-font-size;
-            min-width: 20rem;
+            min-width: 20rem;            
 
             & > p {
                 text-align: justify;
             }
+
+            &-space {
+                max-width: 20rem;
+            }
         }
+
     }
 }
 
